@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		ACFD0C4E21B04BF1004AD7E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFD0C4D21B04BF1004AD7E5 /* AppDelegate.swift */; };
-		ACFD0C5021B04BF1004AD7E5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFD0C4F21B04BF1004AD7E5 /* ViewController.swift */; };
+		ACFD0C5021B04BF1004AD7E5 /* DriversController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFD0C4F21B04BF1004AD7E5 /* DriversController.swift */; };
 		ACFD0C5321B04BF1004AD7E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACFD0C5121B04BF1004AD7E5 /* Main.storyboard */; };
 		ACFD0C5521B04BF1004AD7E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACFD0C5421B04BF1004AD7E5 /* Assets.xcassets */; };
 		ACFD0C5821B04BF1004AD7E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACFD0C5621B04BF1004AD7E5 /* LaunchScreen.storyboard */; };
+		ACFD0C6021B05A37004AD7E5 /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFD0C5F21B05A37004AD7E5 /* ProfileController.swift */; };
+		ACFD0C6221B05B96004AD7E5 /* EditProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFD0C6121B05B96004AD7E5 /* EditProfileController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		ACFD0C4A21B04BF1004AD7E5 /* Ricky_Hu_Project_3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ricky_Hu_Project_3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACFD0C4D21B04BF1004AD7E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		ACFD0C4F21B04BF1004AD7E5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		ACFD0C4F21B04BF1004AD7E5 /* DriversController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriversController.swift; sourceTree = "<group>"; };
 		ACFD0C5221B04BF1004AD7E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ACFD0C5421B04BF1004AD7E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ACFD0C5721B04BF1004AD7E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ACFD0C5921B04BF1004AD7E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACFD0C5F21B05A37004AD7E5 /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
+		ACFD0C6121B05B96004AD7E5 /* EditProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +59,9 @@
 			isa = PBXGroup;
 			children = (
 				ACFD0C4D21B04BF1004AD7E5 /* AppDelegate.swift */,
-				ACFD0C4F21B04BF1004AD7E5 /* ViewController.swift */,
+				ACFD0C4F21B04BF1004AD7E5 /* DriversController.swift */,
+				ACFD0C5F21B05A37004AD7E5 /* ProfileController.swift */,
+				ACFD0C6121B05B96004AD7E5 /* EditProfileController.swift */,
 				ACFD0C5121B04BF1004AD7E5 /* Main.storyboard */,
 				ACFD0C5421B04BF1004AD7E5 /* Assets.xcassets */,
 				ACFD0C5621B04BF1004AD7E5 /* LaunchScreen.storyboard */,
@@ -135,8 +141,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ACFD0C5021B04BF1004AD7E5 /* ViewController.swift in Sources */,
+				ACFD0C5021B04BF1004AD7E5 /* DriversController.swift in Sources */,
+				ACFD0C6221B05B96004AD7E5 /* EditProfileController.swift in Sources */,
 				ACFD0C4E21B04BF1004AD7E5 /* AppDelegate.swift in Sources */,
+				ACFD0C6021B05A37004AD7E5 /* ProfileController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
