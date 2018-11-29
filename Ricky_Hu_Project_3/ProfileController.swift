@@ -11,11 +11,18 @@ import UIKit
 class ProfileViewController: UIViewController {
     
     @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var emailLabel: UILabel!
     
     let defaults = UserDefaults.standard
     
     override func viewDidLoad() {
         nameLabel.text = self.defaults.string(forKey: "user_name")
-        
+        emailLabel.text = self.defaults.string(forKey: "user_email")
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        nameLabel.text = self.defaults.string(forKey: "user_name")
+        emailLabel.text = self.defaults.string(forKey: "user_email")
+    }
+    
 }
