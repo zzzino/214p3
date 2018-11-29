@@ -10,10 +10,25 @@ import UIKit
 
 class DriversViewController: UITableViewController {
 
-    var drivers = ["foo", "bar", "baz"]
+    var drivers = [Driver]()
+    let dataFilePath = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first?.appendingPathComponent("Drivers.plist")
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let firstDriver = Driver()
+        firstDriver.name = "Zino Sama"
+        drivers.append(firstDriver)
+        
+        if let data = try? Data(contentsOf: dataFilePath!) {
+            let decoder = PropertyListDecoder()
+            do {
+                drivers = try decoder.decode([Driver].self, from: data)
+            } catch {
+                print("Failed to decode drivers \(error)")
+            }
+            
+        }
         // Do any additional setup after loading the view, typically from a nib.
     }
     
@@ -23,7 +38,7 @@ class DriversViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "DriverCell", for: indexPath)
-        cell.textLabel?.text = drivers[indexPath.row]
+        cell.textLabel?.text = drivers[indexPath.row].name
         return cell
     }
     
@@ -36,7 +51,19 @@ class DriversViewController: UITableViewController {
         
         let alert = UIAlertController(title: "Add New Driver", message: "", preferredStyle: .alert)
         let action = UIAlertAction(title: "Add Driver", style: .default) { (action) in
-            self.drivers.append(nameField.text!)
+            
+            let driver = Driver()
+            driver.name = nameField.text!
+            self.drivers.append(driver)
+            
+            let encoder = PropertyListEncoder()
+            do {
+                let data = try encoder.encode(self.drivers)
+                try data.write(to: self.dataFilePath!)
+            } catch {
+                print("Failed to encode drivers, \(error)")
+            }
+            
             self.tableView.reloadData()
         }
         
