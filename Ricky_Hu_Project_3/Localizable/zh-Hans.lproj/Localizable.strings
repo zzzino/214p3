@@ -1,0 +1,19 @@
+/* 
+  Localizable.strings
+  Ricky_Hu_Project_3
+
+  Created by Hu, Ricky Binhai on 11/30/18.
+  Copyright © 2018 Hu, Ricky Binhai. All rights reserved.
+*/
+
+"str_sample_drivers" = "释例司机";
+"str_your_drivers" = "你的司机";
+"str_new_driver_title" = "加新司机";
+"str_new_driver_btn" = "确认";
+"str_new_driver_placeholder" = "你司机的名字";
+
+"str_rating_title" = "重制为5";
+"str_rating_msg" = "双击将重制为5";
+"str_rating_ok" = "好";
+
+"str_location_unavailable" = "无法获取位置";

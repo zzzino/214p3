@@ -45,8 +45,8 @@ class DriverProfileViewController: UIViewController {
         ratingLabel.text = "5"
         drivers.write()
         
-        let alert = UIAlertController(title: "Rating reset to 5", message: "Double tap resets your rating to 5", preferredStyle: .alert)
-        let action = UIAlertAction(title: "Ok", style: .default)
+        let alert = UIAlertController(title: NSLocalizedString("str_rating_title", comment: ""), message: NSLocalizedString("str_rating_msg", comment: ""), preferredStyle: .alert)
+        let action = UIAlertAction(title: NSLocalizedString("str_rating_ok", comment: "") , style: .default)
         alert.addAction(action)
         present(alert, animated: true, completion: nil)
     }

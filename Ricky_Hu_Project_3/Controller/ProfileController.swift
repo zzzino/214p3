@@ -41,7 +41,7 @@ class ProfileViewController: UIViewController, CLLocationManagerDelegate {
     }
     
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
-        locationLabel.text = "Location Unavailable"
+        locationLabel.text = NSLocalizedString("str_location_unavailable", comment: "")
     }
     
     override func viewWillAppear(_ animated: Bool) {

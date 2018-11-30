@@ -1,0 +1,62 @@
+/* Class = "UITextView"; text = "description"; ObjectID = "2Ku-EI-kQ8"; */
+"2Ku-EI-kQ8.text" = "描述";
+
+/* Class = "UILabel"; text = "Name"; ObjectID = "49v-1X-bbe"; */
+"49v-1X-bbe.text" = "名字";
+
+/* Class = "UILabel"; text = "Email"; ObjectID = "5rL-cC-MKM"; */
+"5rL-cC-MKM.text" = "邮件";
+
+/* Class = "UILabel"; text = "Name"; ObjectID = "730-yj-q7K"; */
+"730-yj-q7K.text" = "名字";
+
+/* Class = "UINavigationItem"; title = "Drivers"; ObjectID = "E0T-c8-3sG"; */
+"E0T-c8-3sG.title" = "司机";
+
+/* Class = "UILabel"; text = "Email:"; ObjectID = "EEo-Wd-Rn7"; */
+"EEo-Wd-Rn7.text" = "邮件:";
+
+/* Class = "UILabel"; text = "build"; ObjectID = "Fx9-Ii-KsN"; */
+"Fx9-Ii-KsN.text" = "建立";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "Noj-sy-NDt"; */
+"Noj-sy-NDt.text" = "标示";
+
+/* Class = "UIButton"; normalTitle = "Edit"; ObjectID = "Q3L-t2-ASd"; */
+"Q3L-t2-ASd.normalTitle" = "修改";
+
+/* Class = "UILabel"; text = "copyright"; ObjectID = "QfB-xD-Xnu"; */
+"QfB-xD-Xnu.text" = "知识产权";
+
+/* Class = "UILabel"; text = "My Rating:"; ObjectID = "Umr-yr-ldB"; */
+"Umr-yr-ldB.text" = "我的评分:";
+
+/* Class = "UILabel"; text = "version"; ObjectID = "WEn-Eb-WA2"; */
+"WEn-Eb-WA2.text" = "版本";
+
+/* Class = "UIBarButtonItem"; title = "About"; ObjectID = "XvZ-Y7-Bb5"; */
+"XvZ-Y7-Bb5.title" = "关于";
+
+/* Class = "UILabel"; text = "rating"; ObjectID = "YpM-4w-0F0"; */
+"YpM-4w-0F0.text" = "评分";
+
+/* Class = "UILabel"; text = "driver name"; ObjectID = "a30-Bb-HFx"; */
+"a30-Bb-HFx.text" = "司机名字";
+
+/* Class = "UILabel"; text = "Your Location:"; ObjectID = "bJS-eI-qaR"; */
+"bJS-eI-qaR.text" = "你的位置:";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "du3-T9-B9g"; */
+"du3-T9-B9g.text" = "标示";
+
+/* Class = "UILabel"; text = "Name:"; ObjectID = "gMb-mc-Rdi"; */
+"gMb-mc-Rdi.text" = "名字:";
+
+/* Class = "UIBarButtonItem"; title = "Profile"; ObjectID = "hBa-tG-WIN"; */
+"hBa-tG-WIN.title" = "简历";
+
+/* Class = "UILabel"; text = "app name"; ObjectID = "mr6-1W-hgO"; */
+"mr6-1W-hgO.text" = "软件名";
+
+/* Class = "UIButton"; normalTitle = "Save"; ObjectID = "ns5-To-Nhn"; */
+"ns5-To-Nhn.normalTitle" = "保存";

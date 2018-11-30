@@ -1,0 +1,63 @@
+
+/* Class = "UITextView"; text = "description"; ObjectID = "2Ku-EI-kQ8"; */
+"2Ku-EI-kQ8.text" = "description";
+
+/* Class = "UILabel"; text = "Name"; ObjectID = "49v-1X-bbe"; */
+"49v-1X-bbe.text" = "Name";
+
+/* Class = "UILabel"; text = "Email"; ObjectID = "5rL-cC-MKM"; */
+"5rL-cC-MKM.text" = "Email";
+
+/* Class = "UILabel"; text = "Name"; ObjectID = "730-yj-q7K"; */
+"730-yj-q7K.text" = "Name";
+
+/* Class = "UINavigationItem"; title = "Drivers"; ObjectID = "E0T-c8-3sG"; */
+"E0T-c8-3sG.title" = "Drivers";
+
+/* Class = "UILabel"; text = "Email:"; ObjectID = "EEo-Wd-Rn7"; */
+"EEo-Wd-Rn7.text" = "Email:";
+
+/* Class = "UILabel"; text = "build"; ObjectID = "Fx9-Ii-KsN"; */
+"Fx9-Ii-KsN.text" = "build";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "Noj-sy-NDt"; */
+"Noj-sy-NDt.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "Edit"; ObjectID = "Q3L-t2-ASd"; */
+"Q3L-t2-ASd.normalTitle" = "Edit";
+
+/* Class = "UILabel"; text = "copyright"; ObjectID = "QfB-xD-Xnu"; */
+"QfB-xD-Xnu.text" = "copyright";
+
+/* Class = "UILabel"; text = "My Rating:"; ObjectID = "Umr-yr-ldB"; */
+"Umr-yr-ldB.text" = "My Rating:";
+
+/* Class = "UILabel"; text = "version"; ObjectID = "WEn-Eb-WA2"; */
+"WEn-Eb-WA2.text" = "version";
+
+/* Class = "UIBarButtonItem"; title = "About"; ObjectID = "XvZ-Y7-Bb5"; */
+"XvZ-Y7-Bb5.title" = "About";
+
+/* Class = "UILabel"; text = "rating"; ObjectID = "YpM-4w-0F0"; */
+"YpM-4w-0F0.text" = "rating";
+
+/* Class = "UILabel"; text = "driver name"; ObjectID = "a30-Bb-HFx"; */
+"a30-Bb-HFx.text" = "driver name";
+
+/* Class = "UILabel"; text = "Your Location:"; ObjectID = "bJS-eI-qaR"; */
+"bJS-eI-qaR.text" = "Your Location:";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "du3-T9-B9g"; */
+"du3-T9-B9g.text" = "Label";
+
+/* Class = "UILabel"; text = "Name:"; ObjectID = "gMb-mc-Rdi"; */
+"gMb-mc-Rdi.text" = "Name:";
+
+/* Class = "UIBarButtonItem"; title = "Profile"; ObjectID = "hBa-tG-WIN"; */
+"hBa-tG-WIN.title" = "Profile";
+
+/* Class = "UILabel"; text = "app name"; ObjectID = "mr6-1W-hgO"; */
+"mr6-1W-hgO.text" = "app name";
+
+/* Class = "UIButton"; normalTitle = "Save"; ObjectID = "ns5-To-Nhn"; */
+"ns5-To-Nhn.normalTitle" = "Save";

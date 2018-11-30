@@ -26,9 +26,9 @@ class DriversViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let label = UILabel()
         if (section == 0) {
-            label.text = "Sample Drivers"
+            label.text = NSLocalizedString("str_sample_drivers", comment: "")
         } else {
-            label.text = "Your Drivers"
+            label.text = NSLocalizedString("str_your_drivers", comment: "")
         }
         label.backgroundColor = UIColor.cyan
         return label
@@ -62,7 +62,11 @@ class DriversViewController: UITableViewController {
         if (segue.identifier == "goToDriver") {
             let destinationController = segue.destination as! DriverProfileViewController
             if let indexPath = tableView.indexPathForSelectedRow {
-                destinationController.selectedDriver = drivers.drivers[indexPath.row]
+                if (indexPath.section == 0) {
+                    destinationController.selectedDriver = drivers.drivers[indexPath.row]
+                } else {
+                    destinationController.selectedDriver = drivers.drivers[1 + indexPath.row]
+                }
                 destinationController.drivers = drivers
             }
         }
@@ -72,14 +76,14 @@ class DriversViewController: UITableViewController {
     @IBAction func addDriver(_ sender: UIBarButtonItem) {
         var nameField = UITextField()
         
-        let alert = UIAlertController(title: "Add New Driver", message: "", preferredStyle: .alert)
-        let action = UIAlertAction(title: "Add Driver", style: .default) { (action) in
+        let alert = UIAlertController(title: NSLocalizedString("str_new_driver_title", comment: ""), message: "", preferredStyle: .alert)
+        let action = UIAlertAction(title: NSLocalizedString("str_new_driver_btn", comment: ""), style: .default) { (action) in
             self.drivers.addDriver(name: nameField.text!)
             self.tableView.reloadData()
         }
         
         alert.addTextField { (alertTextField) in
-            alertTextField.placeholder = "Name of your driver"
+            alertTextField.placeholder = NSLocalizedString("str_new_driver_placeholder", comment: "")
             nameField = alertTextField
         }
         
