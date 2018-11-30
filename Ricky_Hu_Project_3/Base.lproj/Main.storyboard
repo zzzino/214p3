@@ -106,6 +106,7 @@
                         <viewLayoutGuide key="safeArea" id="VcY-lx-RoZ"/>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="Dmg-0U-Dz6" appends="YES" id="Gdh-Sr-KPj"/>
+                            <outletCollection property="gestureRecognizers" destination="BNa-wV-GcL" appends="YES" id="Vho-7P-1Sk"/>
                         </connections>
                     </view>
                     <connections>
@@ -115,6 +116,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Aww-kt-gXZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer numberOfTapsRequired="2" id="BNa-wV-GcL">
+                    <connections>
+                        <action selector="tapped:" destination="4Vk-tR-ZM2" id="DQg-D3-JPu"/>
+                    </connections>
+                </tapGestureRecognizer>
                 <swipeGestureRecognizer direction="down" id="Dmg-0U-Dz6">
                     <connections>
                         <action selector="swipedDown:" destination="4Vk-tR-ZM2" id="Kkn-O5-7ht"/>

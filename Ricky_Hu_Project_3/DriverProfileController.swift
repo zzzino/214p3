@@ -40,6 +40,12 @@ class DriverProfileViewController: UIViewController {
         drivers.write()
     }
     
+    @IBAction func tapped(_ sender: Any) {
+        selectedDriver!.myRating = 5
+        ratingLabel.text = "5"
+        drivers.write()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         driverNameLabel.text = selectedDriver?.name
