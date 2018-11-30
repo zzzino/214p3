@@ -10,6 +10,7 @@
 		AC3C51F221B0C45D00FBE342 /* DriverProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3C51F121B0C45D00FBE342 /* DriverProfileController.swift */; };
 		AC5A188F21B184F20022ABA7 /* DriverHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5A188E21B184F20022ABA7 /* DriverHelper.swift */; };
 		AC5A189121B192DC0022ABA7 /* DriverList.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5A189021B192DC0022ABA7 /* DriverList.swift */; };
+		AC5A189421B1A5590022ABA7 /* AboutController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5A189321B1A5590022ABA7 /* AboutController.swift */; };
 		AC84A9BB21B0780700AD4903 /* Driver.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC84A9BA21B0780700AD4903 /* Driver.swift */; };
 		ACFD0C4E21B04BF1004AD7E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFD0C4D21B04BF1004AD7E5 /* AppDelegate.swift */; };
 		ACFD0C5021B04BF1004AD7E5 /* DriversController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFD0C4F21B04BF1004AD7E5 /* DriversController.swift */; };
@@ -24,6 +25,7 @@
 		AC3C51F121B0C45D00FBE342 /* DriverProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverProfileController.swift; sourceTree = "<group>"; };
 		AC5A188E21B184F20022ABA7 /* DriverHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverHelper.swift; sourceTree = "<group>"; };
 		AC5A189021B192DC0022ABA7 /* DriverList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverList.swift; sourceTree = "<group>"; };
+		AC5A189321B1A5590022ABA7 /* AboutController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutController.swift; sourceTree = "<group>"; };
 		AC84A9BA21B0780700AD4903 /* Driver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Driver.swift; sourceTree = "<group>"; };
 		ACFD0C4A21B04BF1004AD7E5 /* Ricky_Hu_Project_3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ricky_Hu_Project_3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACFD0C4D21B04BF1004AD7E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -54,6 +56,7 @@
 				AC3C51F121B0C45D00FBE342 /* DriverProfileController.swift */,
 				ACFD0C5F21B05A37004AD7E5 /* ProfileController.swift */,
 				ACFD0C6121B05B96004AD7E5 /* EditProfileController.swift */,
+				AC5A189321B1A5590022ABA7 /* AboutController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -177,6 +180,7 @@
 				AC5A189121B192DC0022ABA7 /* DriverList.swift in Sources */,
 				ACFD0C4E21B04BF1004AD7E5 /* AppDelegate.swift in Sources */,
 				ACFD0C6021B05A37004AD7E5 /* ProfileController.swift in Sources */,
+				AC5A189421B1A5590022ABA7 /* AboutController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
