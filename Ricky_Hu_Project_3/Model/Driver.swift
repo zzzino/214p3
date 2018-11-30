@@ -10,4 +10,5 @@ import Foundation
 
 class Driver: Codable {
     var name: String = ""
+    var myRating: Int = 5
 }

@@ -51,6 +51,7 @@ class DriversViewController: UITableViewController {
             let destinationController = segue.destination as! DriverProfileViewController
             if let indexPath = tableView.indexPathForSelectedRow {
                 destinationController.selectedDriver = drivers[indexPath.row]
+//                destinationController.drivers = drivers
             }
         }
     }

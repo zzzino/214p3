@@ -63,13 +63,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="driver name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a30-Bb-HFx">
-                                <rect key="frame" x="0.0" y="95" width="375" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="35"/>
-                                <color key="textColor" red="0.0" green="0.25" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <color key="highlightedColor" red="1" green="0.97782701590116994" blue="0.959990881348596" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                            </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="description" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="2Ku-EI-kQ8">
                                 <rect key="frame" x="0.0" y="166" width="375" height="138"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -77,16 +70,56 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="driver name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a30-Bb-HFx">
+                                <rect key="frame" x="0.0" y="95" width="375" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="35"/>
+                                <color key="textColor" red="0.0" green="0.25" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="highlightedColor" red="1" green="0.97782701590116994" blue="0.959990881348596" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="rating" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YpM-4w-0F0">
+                                <rect key="frame" x="320" y="631" width="45" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="iB2-5y-ezt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Rating:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Umr-yr-ldB">
+                                <rect key="frame" x="10" y="631" width="82" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="RgX-YN-UYr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="VcY-lx-RoZ" firstAttribute="bottom" secondItem="YpM-4w-0F0" secondAttribute="bottom" constant="15" id="Dxw-UJ-psZ"/>
+                            <constraint firstAttribute="trailing" secondItem="YpM-4w-0F0" secondAttribute="trailing" constant="10" id="IQD-cO-F7d"/>
+                            <constraint firstItem="VcY-lx-RoZ" firstAttribute="bottom" secondItem="Umr-yr-ldB" secondAttribute="bottom" constant="15" id="K6g-Ml-FSy"/>
+                            <constraint firstItem="Umr-yr-ldB" firstAttribute="leading" secondItem="VcY-lx-RoZ" secondAttribute="leading" constant="10" id="d0R-eU-J7o"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="VcY-lx-RoZ"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="Dmg-0U-Dz6" appends="YES" id="Gdh-Sr-KPj"/>
+                        </connections>
                     </view>
                     <connections>
                         <outlet property="driverNameLabel" destination="a30-Bb-HFx" id="V4s-U3-4EU"/>
                         <outlet property="netDescriptionLabel" destination="2Ku-EI-kQ8" id="DoW-FQ-4o5"/>
+                        <outlet property="ratingLabel" destination="YpM-4w-0F0" id="p4d-bq-6KW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Aww-kt-gXZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="down" id="Dmg-0U-Dz6">
+                    <connections>
+                        <action selector="swipedDown:" destination="4Vk-tR-ZM2" id="Kkn-O5-7ht"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1733.5999999999999" y="99.400299850074973"/>
         </scene>
