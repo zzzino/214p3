@@ -17,15 +17,40 @@ class DriversViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         drivers.load()
+        if (drivers.drivers.count == 0) {
+            drivers.addDriver(name: "Dara Kho")
+            drivers.write()
+        }
+    }
+    
+    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let label = UILabel()
+        if (section == 0) {
+            label.text = "Sample Drivers"
+        } else {
+            label.text = "Your Drivers"
+        }
+        label.backgroundColor = UIColor.cyan
+        return label
+    }
+    
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        return 2
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return drivers.drivers.count
+        if (section == 0) {
+            return 1
+        } else {
+            return (drivers.drivers.count - 1 < 0 ? 0 : drivers.drivers.count - 1)
+        }
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "DriverCell", for: indexPath)
-        cell.textLabel?.text = drivers.drivers[indexPath.row].name
+        
+        let name = indexPath.section == 0 ? drivers.drivers[indexPath.row].name : drivers.drivers[indexPath.row + 1].name
+        cell.textLabel?.text = name
         return cell
     }
     
