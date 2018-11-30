@@ -16,8 +16,7 @@ class DriverProfileViewController: UIViewController {
     
     let driverHelper = DriverHelper()
     
-//    var drivers = [Driver]()
-    
+    var drivers = DriverList()
     var selectedDriver : Driver? {
         didSet{
             driverHelper.fetchDriverDescription(for: selectedDriver!.name) { result in
@@ -38,6 +37,7 @@ class DriverProfileViewController: UIViewController {
         let newRating = selectedDriver!.myRating - 1
         selectedDriver!.myRating = newRating
         ratingLabel.text = String(newRating)
+        drivers.write()
     }
     
     override func viewDidLoad() {
