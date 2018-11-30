@@ -42,9 +42,19 @@ class DriversViewController: UITableViewController {
         return cell
     }
     
-//    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        drivers[indexPath.row]
-//    }
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "goToDriver", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "goToDriver") {
+            let destinationController = segue.destination as! DriverProfileViewController
+            if let indexPath = tableView.indexPathForSelectedRow {
+                destinationController.selectedDriver = drivers[indexPath.row]
+            }
+        }
+    }
+    
     
     @IBAction func addDriver(_ sender: UIBarButtonItem) {
         var nameField = UITextField()
