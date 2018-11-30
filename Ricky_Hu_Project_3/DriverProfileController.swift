@@ -44,6 +44,11 @@ class DriverProfileViewController: UIViewController {
         selectedDriver!.myRating = 5
         ratingLabel.text = "5"
         drivers.write()
+        
+        let alert = UIAlertController(title: "Rating reset to 5", message: "Double tap resets your rating to 5", preferredStyle: .alert)
+        let action = UIAlertAction(title: "Ok", style: .default)
+        alert.addAction(action)
+        present(alert, animated: true, completion: nil)
     }
     
     override func viewDidLoad() {
