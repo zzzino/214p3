@@ -47,6 +47,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AC5A189221B19E460022ABA7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				ACFD0C4F21B04BF1004AD7E5 /* DriversController.swift */,
+				AC3C51F121B0C45D00FBE342 /* DriverProfileController.swift */,
+				ACFD0C5F21B05A37004AD7E5 /* ProfileController.swift */,
+				ACFD0C6121B05B96004AD7E5 /* EditProfileController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		AC84A9B921B077E600AD4903 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -76,12 +87,9 @@
 		ACFD0C4C21B04BF1004AD7E5 /* Ricky_Hu_Project_3 */ = {
 			isa = PBXGroup;
 			children = (
-				AC84A9B921B077E600AD4903 /* Model */,
 				ACFD0C4D21B04BF1004AD7E5 /* AppDelegate.swift */,
-				ACFD0C4F21B04BF1004AD7E5 /* DriversController.swift */,
-				AC3C51F121B0C45D00FBE342 /* DriverProfileController.swift */,
-				ACFD0C5F21B05A37004AD7E5 /* ProfileController.swift */,
-				ACFD0C6121B05B96004AD7E5 /* EditProfileController.swift */,
+				AC84A9B921B077E600AD4903 /* Model */,
+				AC5A189221B19E460022ABA7 /* Controller */,
 				ACFD0C5121B04BF1004AD7E5 /* Main.storyboard */,
 				ACFD0C5421B04BF1004AD7E5 /* Assets.xcassets */,
 				ACFD0C5621B04BF1004AD7E5 /* LaunchScreen.storyboard */,
